@@ -69,14 +69,12 @@
 
 /* 🍉 Fruit Border Container */
 .fruit-border {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none; /* Ensures game elements remain interactive */
-    z-index: 999;
+    position: absolute; /* Match the game container */
+    pointer-events: none; /* Ensures clicks go through */
+    z-index: 5; /* Keep it behind game elements */
 }
+
+
 
 /* 🍎 Individual Fruit Border Items */
 .fruit-item {
